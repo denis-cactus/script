@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+a {
+  list-style: none;
+  text-decoration: none;
+  color: #fdfdfd;
+}
+body {
+  font-size: 16px;
+  font-family: 'Roboto Slab', sans-serif;
+  background: #212121;
+  transition: background-color 0.5s ease-in-out;
+}
+ul {
+  list-style: none;
+}
+h1 {
+  margin: 0;
+  font-size: 50px;
+  padding: 100px 50px;
+  font-family: monospace;
+  color: rgb(245, 245, 245);
+  text-align: center;
+}
+
+button {
+  font-family: inherit;
+  display: block;
+  background: rgba(0, 255, 255, 0.74);
+  border: none;
+  border-radius: 5px;
+  font-size: 0.9rem;
+
+  &:hover {
+    background: rgba(0, 255, 255, 0.74);
+  }
+}
+.box {
+  display: flex;
+  background-color: rgba(211, 211, 211, 0.585);
+  margin: 0 auto;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px;
+}
+input {
+  border: 1px solid #212121;
+  margin-bottom: 10px;
+  height: 40px;
+}
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  transition: background-color 0.3s ease; /* Додаємо анімацію */
+}
+
+.box.active {
+  background-color: green;
+}
+#output {
+  color: tomato;
+  width: 30px;
+  height: 20px;
+  font-size: 2em;
+}
+.text-buttons button {
+  padding: 10px 20px;
+  margin: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+.text-buttons .change-text-btn {
+  background-color: orange;
+  color: white;
+}
+
+.text-buttons .reset-text-btn {
+  background-color: gray;
+  color: white;
+}
+
+.text-buttons .random-text-btn {
+  background-color: purple;
+  color: white;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+#container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 8px;
+  background: #fdfdfd;
+  border-radius: 5px;
+  padding: 5px;
+}
+#text {
+  border: 1px solid #fdfdfd;
+}
+input {
+  padding: 8px;
+  background: bisque;
+}
+input::placeholder {
+  color: #404bba;
+}
