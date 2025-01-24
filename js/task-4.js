@@ -1,12 +1,15 @@
-﻿const changeColorBtn = document.querySelector('button');
-
-changeColorBtn.addEventListener('click', () => {
-  const newColor = getRandomHexColor();
-  document.body.style.backgroundColor = newColor;
+﻿const titleEl = document.getElementById('main-title');
+const changeTextButton = document.getElementById('change-btn');
+const addButton = document.getElementById('add-btn');
+const container = document.querySelector('.container');
+changeTextButton.addEventListener('click', () => {
+  titleEl.style.color = 'yellow';
+  titleEl.style.textDecoration = 'underline';
 });
 
-function getRandomHexColor() {
-  return `#${Math.floor(Math.random() * 16777215)
-    .toString(16)
-    .padStart(6, 0)}`;
-}
+addButton.addEventListener('click', () => {
+  const newTextEl = document.createElement('h2');
+  newTextEl.textContent = 'Hi, ChatGPT';
+  container.appendChild(newTextEl);
+  newTextEl.style.color = '#fdfdfd';
+});

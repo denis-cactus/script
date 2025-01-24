@@ -12,13 +12,23 @@
   </head>
   <body>
     <p><a href="./index.html">Go back</a></p>
-    <h1>Додавання елементів за допомогою JavaScript</h1>
+    <h1 id="main-title">Заголовок сторінки</h1>
 
-    <!-- Кнопка для додавання елементів -->
-    <button id="addItemButton">Додати елемент</button>
+    <!-- Завдання 1: Зміна стилю кількох елементів -->
+    <button id="change-style-btn" class="button">
+      Змінити стиль для всіх параграфів
+    </button>
 
-    <!-- Список, до якого будуть додаватися елементи -->
-    <ul id="itemList"></ul>
+    <p>Параграф 1</p>
+    <p>Параграф 2</p>
+    <p>Параграф 3</p>
+
+    <!-- Завдання 2: Додавання елементів у список -->
+    <button id="add-item-btn" class="button">Додати новий елемент</button>
+    <ul id="item-list">
+      <li>Елемент 1 <button class="remove-btn">Видалити</button></li>
+      <li>Елемент 2 <button class="remove-btn">Видалити</button></li>
+    </ul>
 
     <script src="./js/task-5.js" type="module"></script>
   </body>
