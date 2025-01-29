@@ -12,23 +12,25 @@
   </head>
   <body>
     <p><a href="./index.html">Go back</a></p>
-    <h1 id="main-title">Заголовок сторінки</h1>
+    <div id="container">
+      <h1></h1>
+    </div>
+    <button id="hoverBtn">Наведи на мене</button>
 
-    <!-- Завдання 1: Зміна стилю кількох елементів -->
-    <button id="change-style-btn" class="button">
-      Змінити стиль для всіх параграфів
-    </button>
-
-    <p>Параграф 1</p>
-    <p>Параграф 2</p>
-    <p>Параграф 3</p>
-
-    <!-- Завдання 2: Додавання елементів у список -->
-    <button id="add-item-btn" class="button">Додати новий елемент</button>
-    <ul id="item-list">
-      <li>Елемент 1 <button class="remove-btn">Видалити</button></li>
-      <li>Елемент 2 <button class="remove-btn">Видалити</button></li>
-    </ul>
+<!--    <input type="text" id="inputField" placeholder="Натискай клавіші...">-->
+<!--    <p id="message"></p>-->
+<!--    ################     -->
+    <section>
+      <h2>Popular technologies</h2>
+      <ul class="list"></ul>
+    </section>
+<!--    ##############     -->
+    <form id="myForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required>
+      <button type="submit">Submit</button>
+      <p id="message"></p>
+    </form>
 
     <script src="./js/task-5.js" type="module"></script>
   </body>

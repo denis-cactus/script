@@ -1,4 +1,51 @@
+html {
+  font-size: 10px;
+}
 body {
   background: linear-gradient(rgba(37, 78, 205, 0.85), rgb(251, 239, 15));
-  color: rgb(183, 37, 205);
+  color: rgb(205, 37, 183);
+}
+button {
+  display: block;
+  margin: 0 auto;
+  border: none;
+  border-radius: 10rem;
+  padding: .5rem 1rem;
+}
+#output {
+  margin-top: 20px; /* Відступ зверху */
+  padding: 10px; /* Внутрішні відступи */
+  border: 2px dashed #158ad3; /* Додай рамку */
+  border-radius: 10px; /* Закруглені кути */
+  background-color: #f9f9f9; /* Світлий фон */
+  max-width: 400px; /* Максимальна ширина */
+}
+
+#output h2 {
+  margin: 10px 0; /* Відступи між заголовками */
+  color: #333; /* Колір тексту */
+  font-size: 18px; /* Розмір тексту */
+}
+
+.list-item {
+  padding: 8px;
+  border-width: 2px;
+  border-style: dashed;
+}
+
+.list-item:nth-child(even) {
+  border-color: tomato;
+}
+
+.list-item:nth-child(odd) {
+  border-color: blueviolet;
+}
+
+.list-item:not(:last-child) {
+  margin-bottom: 8px;
+}
+#myForm {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+
 }

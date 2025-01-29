@@ -1,15 +1,12 @@
-﻿const submitBtn = document.getElementById('submitButton');
-const inputText = document.getElementById('inputText');
-const outputText = document.getElementById('outputText');
-const errorText = document.getElementById('errorText');
+﻿const changeBtnText = document.getElementById('changeTextBtn');
+changeBtnText.addEventListener('click', () => {
+  changeBtnText.style.transition = 'background-color 0.5s ease';
 
-submitBtn.addEventListener('click', () => {
-  const inputTextEl = inputText.value.trim();
-  if (inputTextEl === '') {
-    errorText.textContent = 'Будь ласка, введіть текст!';
-    outputText.textContent = '';
+  if (changeBtnText.textContent === '📤 Натисни мене') {
+    changeBtnText.textContent = '✔️ Ти мене натиснув';
+    changeBtnText.style.backgroundColor = 'green';
   } else {
-    errorText.textContent = '';
-    outputText.textContent = inputTextEl;
+    changeBtnText.textContent = '📤 Натисни мене';
+    changeBtnText.style.backgroundColor = 'red';
   }
 });
